@@ -1,0 +1,8 @@
+<div class="gameboard-container">
+  <div *ngFor="let value of gameboardArray;let i = index" (click)="getCurrentElement(i)" id="c{{i}}">
+    <p>{{value}}</p>
+  </div>
+</div>
+<div class="error-container">
+  <p *ngIf="error.length>0" class="error">{{error}}</p>
+</div>
